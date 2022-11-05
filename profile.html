@@ -8,39 +8,154 @@
     <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <header>
+    <header class="sticky-top">
       <nav class="navbar bg-primary navbar-expand-md">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a href="/home.html" class="nav-link text-light py-1 px-3 mx-2"
-              >Home</a>
+            <a href="/home.html" class="nav-link text-secondary py-1 px-3 mx-2">Home</a>
           </li>
           <li class="nav-item">
-            <a
-              href="/profile.html" class="nav-link text-light py-1 px-3 mx-2"
-              >Profile</a>
+            <a href="/profile.html" class="nav-link text-secondary py-1 px-3 mx-2">Profile</a>
           </li>
           <li class="nav-item">
-            <a href="/index.html" class="nav-link text-light py-1 px-3 mx-2"
-              >Logout</a>
+            <a href="/index.html" class="nav-link text-secondary py-1 px-3 mx-2">Logout</a>
           </li>
         </ul>
-          <a href="/home.html" class="navbar-brand"
-            ><img src="/images/favicon.ico" alt="logo of Yo" class="brand-logo"
-          /></a>
-         <form class="mx-3" role="search">
-          <input
-            type="search"
-            class="form-control search-bar ps-4"
-            placeholder="Search"
-            aria-label="search"
-          />
+        <a href="/home.html" class="navbar-brand"
+          ><img src="/images/favicon.ico" alt="logo of Yo" class="brand-logo"
+        /></a>
+        <form class="mx-3" role="search">
+          <input type="search" class="form-control ps-4" placeholder="Search" aria-label="search" />
         </form>
       </nav>
     </header>
-    
+    <main>
+      <section>
+        <div class="container">
+          <div class="row text-center">
+            <div class="mt-5 mb-3">
+              <img src="/images/default-profile.png" alt="profile-picture of user" class="img-thumbnail" />
+              <h1 class="mt-2">Marius Christensen</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md xs-5 sm-5 md-5 d-flex flex-column">
+              <div class="card border-primary mb-5">
+                <h2 class="card-title mt-3 ms-3 mb-2">About</h2>
+                <div class="card-body mb-4">
+                  <p class="card-text">From Skien, Norway</p>
+                  <p class="card-text">Currently studying front-end development at Noroff</p>
+                  <p class="card-text">Works changing diapers at home</p>
+                  <p class="card-text">Born 13.12.1988</p>
+                </div>
+              </div>
+              <div class="card border-primary mb-5">
+                <h2 class="card-title mt-3 ms-3 mb-5">Contacts</h2>
+                <div class="card-body mb-4 text-center">
+                  <a href="#">
+                    <img
+                      src="/images/default-profile.png"
+                      alt="profile-picture of user"
+                      class="card-img-bottom m-1 img-thumbnail"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/images/default-profile.png"
+                      alt="profile-picture of user"
+                      class="card-img-bottom m-1 img-thumbnail"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/images/default-profile.png"
+                      alt="profile-picture of user"
+                      class="card-img-bottom m-1 img-thumbnail"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="/images/default-profile.png"
+                      alt="profile-picture of user"
+                      class="card-img-bottom m-1 img-thumbnail"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col xs-5 sm-5 md-5 d-flex flex-column justify-content-center align-items-left text-left">
+              <form action="#">
+                <div class="mb-3">
+                  <label for="post" class="form-label text-left custom-label">Share something with Marius</label>
+                  <div>
+                    <textarea
+                      id="post"
+                      class="form-control post-input"
+                      placeholder="What do you want to share?"
+                      required
+                      minlength="2"
+                    ></textarea>
+                    <button type="submit" class="btn btn-primary mt-2 mb-3 px-5 btn-custom">Post</button>
+                  </div>
+                </div>
+              </form>
+              <h2 class="custom-label mt-3 mb-3 align-self-left">Wall</h2>
+              <div class="card border-primary mb-5">
+                <div class="d-flex ms-2 mt-3 mb-4">
+                  <img
+                    src="/images/default-profile.png"
+                    alt="profile-picture of user"
+                    class="card-img-top img-thumbnail"
+                  />
+                  <h3 class="card-title custom-title ms-3 align-self-center">Camilla</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                  <div class="d-flex gap-3 text-decoration-none mb-0">
+                    <p class="card-text"><a href="#">Like</a></p>
+                    <p class="card-text"><a href="#">Comment</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-primary mb-5">
+                <div class="d-flex ms-2 mt-3 mb-4">
+                  <img
+                    src="/images/default-profile.png"
+                    alt="profile-picture of user"
+                    class="card-img-top img-thumbnail"
+                  />
+                  <h3 class="card-title custom-title ms-3 align-self-center">Amalie</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                  <div class="d-flex gap-3 text-decoration-none mb-0">
+                    <p class="card-text"><a href="#">Like</a></p>
+                    <p class="card-text"><a href="#">Comment</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="bg-primary text-white mt-auto p-2 text-center">&copy; Marius Christensen</footer>
+    <footer class="bg-primary text-secondary mt-auto p-2 text-center">&copy; Marius Christensen</footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
