@@ -10786,4 +10786,10 @@ textarea.form-control-lg {
   border-radius: 10px;
 }
 
+.navbar-brand {
+  border: 3px solid #fffdfd;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
