@@ -1,8 +1,4 @@
 .nav-link:hover {
   border: 1px solid $secondary;
   border-radius: 10px;
-
-  &:active {
-    text-decoration: underline;
-  }
 }

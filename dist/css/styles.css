@@ -10772,17 +10772,18 @@ textarea.form-control-lg {
   }
 }
 .img-thumbnail {
-  max-width: 100px;
+  max-width: 150px;
   border-radius: 50%;
   border: 1px solid #4134a5;
+}
+
+.card .img-thumbnail {
+  max-width: 75px;
 }
 
 .nav-link:hover {
   border: 1px solid #fffdfd;
   border-radius: 10px;
-}
-.nav-link:hover:active {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
