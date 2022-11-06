@@ -30,7 +30,80 @@
         </form>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div">
+              <form action="#">
+                <div class="mb-3">
+                  <h1 class="form-label text-left text-center mt-5">Share something</h1>
+                  <div>
+                    <textarea
+                      id="post"
+                      class="form-control post-input"
+                      placeholder="What do you want to share?"
+                      required
+                      minlength="2"
+                    ></textarea>
+                    <button type="submit" class="btn btn-primary mt-4 mb-3 px-5 text-center">Post</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div>
+              <h2 class="mt-3 mb-3">Feed</h2>
+              <div class="card mb-5">
+                <div class="d-flex ms-2 mt-3 mb-4">
+                  <img src="/images/default-profile.png" alt="profile-picture of user" class="img-thumbnail" />
+                  <h3 class="card-title ms-3 align-self-center">Camilla</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                  <div class="d-flex gap-3 text-decoration-none mb-0">
+                    <p class="card-text"><a href="#">Like</a></p>
+                    <p class="card-text"><a href="#">Comment</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card mb-5">
+                <div class="d-flex ms-2 mt-3 mb-4">
+                  <img src="/images/default-profile.png" alt="profile-picture of user" class="img-thumbnail" />
+                  <h3 class="card-title ms-3 align-self-center">Amalie</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                  <div class="d-flex gap-3 text-decoration-none mb-0">
+                    <p class="card-text"><a href="#">Like</a></p>
+                    <p class="card-text"><a href="#">Comment</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-primary text-secondary mt-auto p-2 text-center">&copy; Marius Christensen</footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
