@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Yo</title>
+    <meta name="description" content="login page for Yo, the sickest social media application" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="sticky-top">
+      <nav class="navbar bg-primary navbar-expand-md">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a href="/home.html" class="nav-link text-secondary py-1 px-3 mx-2">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/profile.html" class="nav-link text-secondary py-1 px-3 mx-2">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link text-secondary py-1 px-3 mx-2">Logout</a>
+          </li>
+        </ul>
+        <a href="/home.html" class="navbar-brand"
+          ><img src="/images/favicon.ico" alt="logo of Yo" class="brand-logo"
+        /></a>
+        <form class="mx-3" role="search">
+          <input type="search" class="form-control ps-2" placeholder="Search" aria-label="search" />
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="mt-4 mb-2">
+        <div class="container text-center">
+          <div class="row">
+            <div class="d-flex justify-content-center">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title mt-3">Login</h1>
+                  <form action="profile.html" class="text-start d-flex flex-column align-items-center mt-5">
+                    <div class="mb-3 mx-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" id="email" class="form-control" placeholder="email@address.com" required />
+                    </div>
+                    <div class="mb-3 mx-3">
+                      <label for="password" class="form-label">Password:</label>
+                      <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="********"
+                        required
+                        minlength="8"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4 mb-5 px-5 text-uppercase">login</button>
+                    <div class="card-text mb-3 text-center">
+                      <p>Not registered?</p>
+                      <a class="text-decoration-underline" href="#">Create an account</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary text-secondary mt-auto p-2 text-center">&copy; Marius Christensen</footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
